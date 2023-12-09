@@ -1,0 +1,30 @@
+ext {
+    versions = [:]
+    libraries = [:]
+}
+
+versions.lombok = '1.18.28'
+
+versions.logback = '1.4.11'
+versions.slf4j = '2.0.7'
+
+versions.junit = '5.10.0'
+versions.assertj = '3.24.2'
+
+libraries.lombok = [
+    "org.projectlombok:lombok:${versions.lombok}"
+]
+
+libraries.logback = [
+    "ch.qos.logback:logback-core:${versions.logback}",
+    "ch.qos.logback:logback-classic:${versions.logback}",
+    "org.slf4j:slf4j-api:${versions.slf4j}"
+]
+
+libraries.junit = [
+    "org.junit.jupiter:junit-jupiter-api:${versions.junit}",
+    "org.junit.jupiter:junit-jupiter-params:${versions.junit}",
+    "org.junit.jupiter:junit-jupiter-engine:${versions.junit}",
+    "org.assertj:assertj-core:${versions.assertj}"
+]
+
