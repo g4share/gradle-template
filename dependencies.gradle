@@ -3,7 +3,7 @@ ext {
     libraries = [:]
 }
 
-versions.lombok = '1.18.28'
+versions.lombok = '1.18.30'
 
 versions.logback = '1.4.11'
 versions.slf4j = '2.0.7'
